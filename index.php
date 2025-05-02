@@ -36,21 +36,20 @@
         <form action="answer.php" method="GET">
           <br />
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="number" id="length-a">
+            <input class="mdl-textfield__input" type="text" id="length-a" name="length-a">
             <label class="mdl-textfield__label" for="length-a">Length A</label>
           </div>
           <br />
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="number" id="length-b">
+            <input class="mdl-textfield__input" type="text" id="length-b" name="length-b">
             <label class="mdl-textfield__label" for="length-b">Length B</label>
           </div>
           <br />
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="number" id="length-c">
+            <input class="mdl-textfield__input" type="text" id="length-c" name="length-c">
             <label class="mdl-textfield__label" for="length-c">Length C</label>
           </div>
           <br>
-          <!-- Accent-colored raised button with ripple -->
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
             type="submit">
             Check Triangle Type
