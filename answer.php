@@ -38,16 +38,12 @@
 
           // using the cosine law
 
-          $angleA = rad2deg(acos(($lengthB ** 2 + $lengthC ** 2 - $lengthA ** 2) / (2 * $lengthB * $lengthC)));
-          $angleB = rad2deg(acos(($lengthC ** 2 + $lengthA ** 2 - $lengthB ** 2) / (2 * $lengthC * $lengthA)));
-          $angleC = rad2deg(acos(($lengthA ** 2 + $lengthB ** 2 - $lengthC ** 2) / (2 * $lengthA * $lengthB)));
+          $angleA = acos(($lengthB ** 2 + $lengthC ** 2 - $lengthA ** 2) / (2 * $lengthB * $lengthC)) * (180 / pi());
+          $angleB = acos(($lengthC ** 2 + $lengthA ** 2 - $lengthB ** 2) / (2 * $lengthC * $lengthA)) * (180 / pi());
+          $angleC = acos(($lengthA ** 2 + $lengthB ** 2 - $lengthC ** 2) / (2 * $lengthA * $lengthB)) * (180 / pi());
+
 
           $sumOfAngles = round($angleA, 2) + round($angleB, 2) + round($angleC, 2);
-
-          echo "<script>console.log(. $angleA . );</script>";
-          echo "<script>console.log(. $angleB . );</script>";
-          echo "<script>console.log(. $angleC . );</script>";
-          echo "<script>console.log(. $sumOfAngles . );</script>";
 
           // process 
           if ($sumOfAngles != 180 || ($lengthA + $lengthB <= $lengthC || $lengthA + $lengthC <= $lengthB || $lengthB + $lengthC <= $lengthA)) {
