@@ -27,7 +27,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/museum_discount.png" alt="Types of Triangles" width="250" />
+        <img src="./images/types-of-triangles.png" alt="Types of Triangles" width="250" />
       </div>
       <br />
       <div class="page-content">Please fill in the boxes:
